@@ -1,0 +1,116 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #ffffff;
+  position: relative;
+  padding: 2rem;
+  width: 40%;
+  min-width: 20rem;
+  max-width: 60rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-close-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-close-button {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition:
+    scale 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.modal-close-button:hover {
+  scale: 1.1;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #c2521e;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #a7411a;
+}
+
+.primary-button:active {
+  transform: scale(0.98);
+}
+
+.secondary-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #6c757d;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.secondary-button:hover {
+  background-color: #5a6268;
+}
+
+.secondary-button:active {
+  transform: scale(0.98);
+}
+
+.message {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}

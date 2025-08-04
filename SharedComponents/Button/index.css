@@ -1,0 +1,44 @@
+.common-button {
+  display: flex;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  background-color: #222;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.common-button.round-button {
+  font-size: 1rem;
+  padding: 0.75rem 0.75rem;
+  border-radius: 50%;
+  align-self: flex-end;
+  line-height: 1;
+}
+.common-button:hover {
+  box-shadow: 0 0 0.5rem rgb(255, 255, 255);
+}
+
+.common-button:active {
+  transform: scale(0.95);
+}
+/* .common-button:focus {
+  border-radius: 0;
+  background: linear-gradient(to top, #747474, transparent);
+} */
+
+.common-button.disabled {
+  background-color: #333;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.common-button.disabled:hover {
+  box-shadow: none;
+}
+
+.common-button:hover .tooltip-text {
+  visibility: visible;
+}

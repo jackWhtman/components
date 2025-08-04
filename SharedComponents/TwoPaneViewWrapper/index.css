@@ -1,0 +1,58 @@
+.two-pane-view-wrapper {
+  display: grid;
+  grid-template-columns: auto var(--pane-width, 20%);
+  height: calc(100vh - 7rem);
+  overflow: hidden;
+  transition: grid-template-columns 0.3s linear;
+  min-height: calc(100vh - 10rem);
+}
+
+.two-pane-view-wrapper.no-right-pane {
+  --pane-width: 0;
+}
+
+.two-pane-view-wrapper.pane-on-left {
+  grid-template-columns: var(--pane-width, 20%) auto;
+}
+
+.filter-pane {
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  border-right: 0.125rem solid #cccccc;
+  overflow-y: auto;
+  padding: 0 0.5rem;
+}
+.filter-pane-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.25remrem 0;
+  gap: 0.5rem;
+}
+.filter-pane-title {
+  margin-right: auto;
+}
+.filters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+.apply-filter-button {
+  background-color: #333;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  padding: 0.25rem 1rem;
+}
+
+.filter-pane input {
+  padding: 0.25rem;
+  width: max-content;
+}
+
+.attribute-item .input-field select {
+  width: max-content;
+}

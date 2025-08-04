@@ -1,0 +1,69 @@
+.chip-input {
+  width: 99%;
+}
+
+.chip-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: #000;
+  padding: 0.5rem 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+.chip {
+  background-color: #999;
+  color: white;
+  padding: 0.375rem 0.625rem;
+  border-radius: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.chip-text {
+  max-width: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-chip-button {
+  background: transparent;
+  width: 1rem;
+  font-size: 0.625rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  margin-left: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 0.625rem;
+}
+
+.delete-chip-button:hover {
+  color: #ff0000;
+  box-shadow: none;
+}
+
+.chip-input .input-field {
+  margin: 0;
+  flex-grow: 1;
+}
+.chip-input input:focus,
+.chip-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  min-width: 10rem;
+  padding: .25rem;
+}
+
+.chip-text-input::placeholder {
+  color: #aaa;
+}
+
+.chip-input-container:focus-within {
+  border-color: #007bff;
+}

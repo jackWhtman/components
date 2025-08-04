@@ -1,0 +1,19 @@
+.filter-range .input-field .filter-range-input {
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  width: 7rem;
+}
+.filter-range-inputs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.filter-range {
+  font-size: 0.75rem;
+  color: #333;
+}
+.filter-range .input-field,
+.filter-range .input-field input {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+}

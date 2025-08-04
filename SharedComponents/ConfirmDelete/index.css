@@ -1,0 +1,16 @@
+.confirm-delete-buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.delete-button {
+  background-color: #da1709;
+  color: #fff;
+}
+
+.delete-button:disabled {
+  scale: none;
+  color: #ccc;
+  cursor: not-allowed;
+}
